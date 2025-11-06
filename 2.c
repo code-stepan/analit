@@ -28,7 +28,7 @@ double calculate_pi(long long num_points) {
 
 int main() {
     double epsilon;
-    printf("Введите погрешность (например, 0.001): ");
+    printf("Введите погрешность (например, 0.01): ");
     
     if (scanf("%lf", &epsilon) != 1 || epsilon <= 0) {
         printf("Ошибка: введите положительное число для погрешности.\n");
