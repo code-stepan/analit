@@ -38,7 +38,7 @@ void multiply_matrices(int threads_count) {
     double **C = allocate_matrix(N);
     
     if (A == NULL || B == NULL || C == NULL) {
-        fprintf(stderr, "Неудалось выделить память для матриц!\n");
+        fprintf(stderr, "Не удалось выделить память для матриц!\n");
         free_matrix(A);
         free_matrix(B);
         free_matrix(C);
