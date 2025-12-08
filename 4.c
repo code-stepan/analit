@@ -19,7 +19,7 @@ typedef struct {
 
 NumberResults results[MAX_NUM];
 
-// 1. Разложение числа на сумму ДВУХ квадратов
+// Разложение числа на сумму ДВУХ квадратов
 void decomposition_sum_squares(int n, int index) {
     results[index].squares_count = 0;
     for (int i = 0; i * i <= n; ++i) {
@@ -33,7 +33,7 @@ void decomposition_sum_squares(int n, int index) {
     }
 }
 
-// 2. Нахождение n чисел Фибоначчи
+// Нахождение n чисел Фибоначчи
 void calculate_n_fibonacci(int n, int index) {
     if (n <= 0) {
         results[index].fibonacci_count = 0;
@@ -48,7 +48,7 @@ void calculate_n_fibonacci(int n, int index) {
     }
 }
 
-// 3. Проверка простоты
+// Проверка простоты
 int is_prime(int x) {
     if (x < 2) return 0;
     if (x == 2 || x == 3) return 1;
@@ -59,7 +59,7 @@ int is_prime(int x) {
     return 1;
 }
 
-// 4. N-ое простое число
+// N-ое простое число
 int find_nth_prime(int n) {
     int count = 0, num = 2;
     while (count < n) {
@@ -72,7 +72,7 @@ int find_nth_prime(int n) {
     return -1;
 }
 
-// 5. Сумма делителей
+// Сумма делителей
 int calculate_sum_divisors(int n) {
     int sum = 1 + (n != 1 ? n : 0);
     for (int i = 2; i * i <= n; ++i) {
